@@ -4,10 +4,7 @@ package segundaevaluacion;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-/*
- * No consigo lo de los dos modelos iguales
- * Tampoco lo del StringBuilder
- */
+
 
 public class Ejercicio2 {
 	
@@ -45,7 +42,6 @@ public class Ejercicio2 {
 		if (lista.size()>0) {
 			
 		StringBuilder sbuilder=new StringBuilder();
-		//No se como llamar al metodo get sin referencia ya probe y no me sale
 		
 		for (int i = 0; i < lista.size(); i++) {
 			String valor=lista.get(i).getModelo();
