@@ -10,10 +10,11 @@ public class Ejercicio2 {
 	
 	public static void main(String[] args) {
 		List<Telefono> lista=new ArrayList<Telefono>();
+		Telefono telefono;
 		Scanner in=new Scanner(System.in);
-		String nombre="";
-		int precio=0;
-		boolean tieneGPS=false;
+		String nombre;
+		int precio;
+		boolean tieneGPS;
 		System.out.println("Introduce nombre,telefono y gps .quit para salir:");
 		while (true) {
 			System.out.println("Introduce nombre:");
@@ -26,9 +27,11 @@ public class Ejercicio2 {
 				System.out.println("Introduce precio:");
 				precio=in.nextInt();
 				System.out.println("Introduce si tiene GPS o no(true,false):");
-				
 				tieneGPS=in.nextBoolean();
-				lista.add(new Telefono(nombre,precio,tieneGPS));
+				telefono = new Telefono(nombre,precio,tieneGPS);
+				if (!lista.contains(telefono))
+				lista.add(telefono);
+				//lista.add(new Telefono(nombre,precio,tieneGPS));
 				
 			}	
 		}
